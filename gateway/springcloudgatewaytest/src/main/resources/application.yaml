@@ -1,0 +1,32 @@
+server:
+  port: 8001
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: storage
+          uri: https://storage.googleapis.com
+          predicates:
+          - Path=/b-ao-recording-data/**
+      # - id: host_route
+      #   uri: http://35.200.220.31
+      #   predicates:
+      #   - Path=/*,/assets/**
+management:
+  endpoint:
+    gateway:
+      enabled: true
+  # security:
+  #   enabled: false
+  # health:
+  #   consul:
+  #     enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+    health:
+      sensitive: false

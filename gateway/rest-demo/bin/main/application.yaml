@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: hello-service
+  cloud:
+    consul:
+      enabled: true
+  endpoints:
+    actuator:
+      sensitive: false

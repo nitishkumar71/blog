@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "springcloudgatewaytest"
+		},
+		{
+			"path": "rest-demo"
+		}
+	],
+	"settings": {
+		"java.configuration.updateBuildConfiguration": "automatic"
+	}
+}

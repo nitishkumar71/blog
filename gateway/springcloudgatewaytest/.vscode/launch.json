@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-DemoApplication<springcloudgatewaytest>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.blog.springcloudgateway.springcloudgatewaytest.DemoApplication",
+            "projectName": "springcloudgatewaytest",
+            "args": ""
+        }
+    ]
+}
