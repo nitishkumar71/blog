@@ -1,0 +1,1 @@
+docker build --build-arg PORT=8080 .

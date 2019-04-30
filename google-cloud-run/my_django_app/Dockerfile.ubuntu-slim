@@ -1,0 +1,49 @@
+FROM googlecontainer/ubuntu-slim:0.14
+LABEL author="Nitishkumar Singh"
+
+RUN apt update; apt install -y nano curl apache2 apache2-utils python3 libapache2-mod-wsgi-py3 python3-pip; \
+pip install --upgrade pip; ln /usr/bin/pip3 /usr/bin/pip;
+
+WORKDIR /var/www/my_django_app
+COPY . /var/www/my_django_app
+
+RUN echo "import os\n\
+import sys\n\
+path='/var/www/my_django_app'\n\
+if path not in sys.path:\n\
+    sys.path.append(path)\n\
+os.environ['DJANGO_SETTINGS_MODULE'] = 'my_django_app.settings'\n\
+from django.core.wsgi import get_wsgi_application\n\
+application = get_wsgi_application()\n\
+" >> /var/www/my_django_app/django.wsgi
+
+RUN rm /etc/apache2/sites-available/000-default.conf
+RUN echo "<VirtualHost *:80>\n\
+    #My site Name\n\
+    ServerName localhost\n\ 
+    #Demon process for multiple virtual hosts\n\
+    WSGIDaemonProcess my_django_app threads=100 graceful-timeout=300 maximum-requests=2000 queue-timeout=200\n\ 
+    #Pointing wsgi script to config file\n\
+    WSGIScriptAlias / /var/www/my_django_app/django.wsgi\n\
+    WSGIProcessGroup my_django_app\n\    
+    <Directory /var/www/my_django_app >\n\
+        WSGIProcessGroup my_django_app\n\
+        WSGIApplicationGroup %{GLOBAL}\n\
+        Require all granted\n\
+    </Directory>\n\
+</VirtualHost>" >> /etc/apache2/sites-available/000-default.conf
+
+RUN rm /etc/apache2/mods-available/mpm_event.conf; echo "<IfModule mpm_event_module>\n\
+   StartServers 1\n\
+   ServerLimit 8\n\
+   MinSpareThreads 25\n\
+   MaxSpareThreads 50\n\
+   ThreadLimit 64\n\
+   ThreadsPerChild 25\n\
+   MaxRequestWorkers 200\n\
+   MaxConnectionsPerChild 300\n\
+</IfModule>" >> /etc/apache2/mods-available/mpm_event.conf
+RUN pip install -r requirements.txt; chown www-data:www-data /etc/apache2/; chown -R www-data:www-data *; \
+chown -R www-data:www-data /var/www/
+EXPOSE 80
+ENTRYPOINT ["apache2ctl", "-D", "FOREGROUND"]
