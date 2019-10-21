@@ -2,8 +2,8 @@
 eval $(minikube docker-env)
 #build images
 docker build --tag=gateway:latest gateway/.
-docker build --tag=tracking:latest tracking/.
 docker build --tag=booking:latest booking/.
+docker build --tag=tracking:latest tracking/.
 
 # create role and service account
 kubectl apply -f gateway/service-account.yaml
