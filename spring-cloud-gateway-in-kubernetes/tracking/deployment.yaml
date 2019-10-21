@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tracking-deployment
+  labels:
+    app: tracking
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tracking
+  template:
+    metadata:
+      labels:
+        app: tracking
+    spec:
+      containers:
+      - name: tracking
+        image: tracking
+        imagePullPolicy: Never #comment except minikube
+        ports:
+        - containerPort: 8080
+        livenessProbe:
+          httpGet:
+            path: /actutator/health
+            port: 8080
+          initialDelaySeconds: 30
+          periodSeconds: 15
+          timeoutSeconds: 10     

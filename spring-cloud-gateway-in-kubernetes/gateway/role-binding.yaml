@@ -1,0 +1,13 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: gateway-read
+  namespace: default # This only grants permissions within the "development" namespace.
+subjects:
+- kind: ServiceAccount
+  name: gateway # Name is case sensitive
+  namespace: default
+roleRef:
+  kind: Role
+  name: gateway-role
+  apiGroup: rbac.authorization.k8s.io
