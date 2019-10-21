@@ -7,11 +7,12 @@ spring:
           enabled: true
           lowerCaseServiceId: true
           # url-expression: "'http://'+serviceId"
-    kubernetes:
-      reload:
-        enabled: true
-        mode: polling
-        period: 5000
+    # enable if configuration need to be loaded from ConfigMap or Secrets
+    # kubernetes:
+    #   reload:
+    #     enabled: true
+    #     mode: polling
+    #     period: 5000
 server:
   port: 8080
 logging:
