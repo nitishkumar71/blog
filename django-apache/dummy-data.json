@@ -1,0 +1,34 @@
+[{
+        "name": "Wonder Woman",
+        "release_date": "2017-05-17",
+        "description": "In present-day Paris, Diana Prince receives a photographic plate from Wayne Enterprises (accompanied by a letter from Bruce Wayne) of herself and four men taken during World War I, prompting her to recall her past"
+    },
+    {
+
+        "name": "Aquaman",
+        "release_date": "2018-11-26",
+        "description": "In present-day Paris, Diana Prince receives a photographic plate from Wayne Enterprises (accompanied by a letter from Bruce Wayne) of herself and four men taken during World War I, prompting her to recall her past"
+    },
+    {
+
+        "name": "Iron Man",
+        "release_date": "2008-05-02",
+        "description": "Tony Stark, who has inherited the defense contractor Stark Industries from his father Howard Stark, is in war-torn Afghanistan with his friend and military liaison, Lieutenant Colonel James Rhodes, to demonstrate the new Jericho missile."
+    },
+    {
+
+        "name": "Iron Man 2",
+        "release_date": "2010-04-26",
+        "description": "In Russia, the media covers Tony Stark's disclosure of his identity as Iron Man. Ivan Vanko, whose father, Anton Vanko, has just died, sees this and begins building a miniature arc reactor similar to Stark's."
+    },
+    {
+        "name": "Avengers: Infinity War",
+        "release_date": "2018-05-23",
+        "description": "Having acquired the Power Stone, one of the six Infinity Stones, from the planet Xandar, Thanos and his lieutenants—Ebony Maw, Cull Obsidian, Proxima Midnight, and Corvus Glaive—intercept the spaceship carrying the survivors of Asgard's recent destruction."
+    },
+    {
+        "name": "Avengers: Endgame",
+        "release_date": "2018-05-23",
+        "description": "Having acquired the Power Stone, one of the six Infinity Stones, from the planet Xandar, Thanos and his lieutenants—Ebony Maw, Cull Obsidian, Proxima Midnight, and Corvus Glaive—intercept the spaceship carrying the survivors of Asgard's recent destruction."
+    }
+]

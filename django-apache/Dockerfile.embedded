@@ -1,0 +1,10 @@
+FROM alpine:3.12.0
+RUN apk --update --no-cache add python3=3.8.5-r0 python3-dev=3.8.5-r0 py3-pip=20.1.1-r0 apache2=2.4.46-r0 apache2-dev=2.4.46-r0 apache2-mod-wsgi=4.7.1-r0;\
+ln -s python3 /usr/bin/python;
+
+ADD . .
+
+RUN cp -R imdb /var/www/;cp imdb_embedded.conf /etc/apache2/conf.d/imdb_embedded.conf; pip install -r requirements.txt; chmod +x httpd-foreground; cp httpd-foreground /usr/local/bin
+
+EXPOSE 80
+CMD ["httpd-foreground"]
