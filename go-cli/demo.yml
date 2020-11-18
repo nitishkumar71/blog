@@ -1,0 +1,637 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /home/nitishkumar/Practice/blog/go-cli
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 162
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 20
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 541
+    content: "\e]0;nitishkumar@15-ec0104ax: ~/Practice/blog/go-cli\a\e[01;32mnitishkumar@15-ec0104ax\e[00m:\e[01;34m~/Practice/blog/go-cli\e[00m$ "
+  - delay: 1191
+    content: e
+  - delay: 207
+    content: c
+  - delay: 188
+    content: h
+  - delay: 198
+    content: o
+  - delay: 246
+    content: ' '
+  - delay: 1128
+    content: '"'
+  - delay: 564
+    content: C
+  - delay: 284
+    content: r
+  - delay: 205
+    content: e
+  - delay: 122
+    content: a
+  - delay: 256
+    content: t
+  - delay: 219
+    content: e
+  - delay: 187
+    content: ' '
+  - delay: 565
+    content: B
+  - delay: 193
+    content: i
+  - delay: 143
+    content: 'n'
+  - delay: 121
+    content: a
+  - delay: 456
+    content: r
+  - delay: 278
+    content: 'y'
+  - delay: 226
+    content: ' '
+  - delay: 551
+    content: B
+  - delay: 224
+    content: u
+  - delay: 184
+    content: i
+  - delay: 206
+    content: l
+  - delay: 392
+    content: d
+  - delay: 164
+    content: ' '
+  - delay: 236
+    content: o
+  - delay: 145
+    content: f
+  - delay: 163
+    content: ' '
+  - delay: 1976
+    content: A
+  - delay: 266
+    content: p
+  - delay: 129
+    content: p
+  - delay: 216
+    content: l
+  - delay: 207
+    content: i
+  - delay: 130
+    content: c
+  - delay: 112
+    content: a
+  - delay: 266
+    content: t
+  - delay: 140
+    content: i
+  - delay: 132
+    content: o
+  - delay: 159
+    content: 'n'
+  - delay: 1047
+    content: '"'
+  - delay: 632
+    content: "\r\nCreate Binary Build of Application\r\n\e]0;nitishkumar@15-ec0104ax: ~/Practice/blog/go-cli\a\e[01;32mnitishkumar@15-ec0104ax\e[00m:\e[01;34m~/Practice/blog/go-cli\e[00m$ "
+  - delay: 8555
+    content: g
+  - delay: 158
+    content: o
+  - delay: 1158
+    content: ' '
+  - delay: 346
+    content: b
+  - delay: 243
+    content: u
+  - delay: 173
+    content: i
+  - delay: 215
+    content: l
+  - delay: 98
+    content: d
+  - delay: 210
+    content: ' '
+  - delay: 748
+    content: '-'
+  - delay: 440
+    content: o
+  - delay: 328
+    content: ' '
+  - delay: 867
+    content: b
+  - delay: 165
+    content: i
+  - delay: 192
+    content: 'n'
+  - delay: 446
+    content: /
+  - delay: 592
+    content: g
+  - delay: 136
+    content: o
+  - delay: 264
+    content: '-'
+  - delay: 235
+    content: c
+  - delay: 263
+    content: l
+  - delay: 352
+    content: i
+  - delay: 1387
+    content: "\r\n"
+  - delay: 554
+    content: "\e]0;nitishkumar@15-ec0104ax: ~/Practice/blog/go-cli\a\e[01;32mnitishkumar@15-ec0104ax\e[00m:\e[01;34m~/Practice/blog/go-cli\e[00m$ "
+  - delay: 1604
+    content: l
+  - delay: 143
+    content: s
+  - delay: 1184
+    content: ' '
+  - delay: 433
+    content: b
+  - delay: 113
+    content: i
+  - delay: 214
+    content: 'n'
+  - delay: 499
+    content: /
+  - delay: 1085
+    content: "\r\n\e[0m\e[01;32mgo-cli\e[0m\r\n\e]0;nitishkumar@15-ec0104ax: ~/Practice/blog/go-cli\a\e[01;32mnitishkumar@15-ec0104ax\e[00m:\e[01;34m~/Practice/blog/go-cli\e[00m$ "
+  - delay: 1369
+    content: c
+  - delay: 112
+    content: l
+  - delay: 117
+    content: e
+  - delay: 152
+    content: a
+  - delay: 191
+    content: r
+  - delay: 106
+    content: "\r\n\e[H\e[2J\e[3J\e]0;nitishkumar@15-ec0104ax: ~/Practice/blog/go-cli\a\e[01;32mnitishkumar@15-ec0104ax\e[00m:\e[01;34m~/Practice/blog/go-cli\e[00m$ "
+  - delay: 1061
+    content: .
+  - delay: 171
+    content: /
+  - delay: 1278
+    content: b
+  - delay: 158
+    content: i
+  - delay: 201
+    content: n/
+  - delay: 849
+    content: g
+  - delay: 120
+    content: o
+  - delay: 518
+    content: '-cli '
+  - delay: 1140
+    content: "\r\n"
+  - delay: 32
+    content: "PProvide sub-command\r\n\e]0;nitishkumar@15-ec0104ax: ~/Practice/blog/go-cli\a\e[01;32mnitishkumar@15-ec0104ax\e[00m:\e[01;34m~/Practice/blog/go-cli\e[00m$ "
+  - delay: 2451
+    content: g
+  - delay: 580
+    content: "\b\e[K"
+  - delay: 2442
+    content: .
+  - delay: 813
+    content: /
+  - delay: 689
+    content: b
+  - delay: 149
+    content: i
+  - delay: 201
+    content: 'n'
+  - delay: 538
+    content: "\b\e[K"
+  - delay: 135
+    content: "\b\e[K"
+  - delay: 121
+    content: "\b\e[K"
+  - delay: 126
+    content: "\b\e[K"
+  - delay: 337
+    content: e
+  - delay: 360
+    content: "\b\e[K"
+  - delay: 125
+    content: "\b\e[K"
+  - delay: 116
+    content: "\a"
+  - delay: 148
+    content: e
+  - delay: 95
+    content: c
+  - delay: 175
+    content: h
+  - delay: 155
+    content: o
+  - delay: 257
+    content: ' '
+  - delay: 638
+    content: '"'
+  - delay: 537
+    content: ' '
+  - delay: 378
+    content: u
+  - delay: 145
+    content: s
+  - delay: 195
+    content: e
+  - delay: 560
+    content: "\b\e[K"
+  - delay: 131
+    content: "\b\e[K"
+  - delay: 136
+    content: "\b\e[K"
+  - delay: 103
+    content: "\b\e[K"
+  - delay: 420
+    content: U
+  - delay: 162
+    content: s
+  - delay: 186
+    content: e
+  - delay: 145
+    content: ' '
+  - delay: 988
+    content: S
+  - delay: 201
+    content: u
+  - delay: 592
+    content: b
+  - delay: 1156
+    content: '-'
+  - delay: 855
+    content: "\b\e[K"
+  - delay: 500
+    content: "\b\e[K"
+  - delay: 30
+    content: "\b\e[K"
+  - delay: 699
+    content: "\b\e[K"
+  - delay: 408
+    content: H
+  - delay: 180
+    content: e
+  - delay: 91
+    content: l
+  - delay: 202
+    content: p
+  - delay: 660
+    content: '"'
+  - delay: 227
+    content: "\r\nUse Help\r\n\e]0;nitishkumar@15-ec0104ax: ~/Practice/blog/go-cli\a\e[01;32mnitishkumar@15-ec0104ax\e[00m:\e[01;34m~/Practice/blog/go-cli\e[00m$ "
+  - delay: 1937
+    content: .
+  - delay: 172
+    content: /
+  - delay: 888
+    content: b
+  - delay: 82
+    content: i
+  - delay: 153
+    content: 'n'
+  - delay: 441
+    content: /
+  - delay: 474
+    content: g
+  - delay: 92
+    content: o
+  - delay: 1045
+    content: '-'
+  - delay: 133
+    content: c
+  - delay: 359
+    content: 'li '
+  - delay: 831
+    content: h
+  - delay: 125
+    content: e
+  - delay: 117
+    content: l
+  - delay: 832
+    content: p
+  - delay: 240
+    content: "\r\n"
+  - delay: 10
+    content: "go-cli is an sample cli tool being built for demo purpose.\r\n\t\tIt will be used to give demo og cobra library\r\n\r\nUsage:\r\n  go-cli [flags]\r\n  go-cli [command]\r\n\r\nAvailable Commands:\r\n  dir         Perform operations on Directory\r\n  file        Perform operations on Files\r\n  help        Help about any command\r\n\r\nFlags:\r\n  -h, --help   help for go-cli\r\n\r\nUse \"go-cli [command] --help\" for more information about a command.\r\n\e]0;nitishkumar@15-ec0104ax: ~/Practice/blog/go-cli\a\e[01;32mnitishkumar@15-ec0104ax\e[00m:\e[01;34m~/Practice/blog/go-cli\e[00m$ "
+  - delay: 8989
+    content: e
+  - delay: 179
+    content: c
+  - delay: 171
+    content: h
+  - delay: 220
+    content: o
+  - delay: 247
+    content: ' '
+  - delay: 347
+    content: '"'
+  - delay: 497
+    content: U
+  - delay: 127
+    content: s
+  - delay: 172
+    content: e
+  - delay: 158
+    content: ' '
+  - delay: 512
+    content: S
+  - delay: 155
+    content: u
+  - delay: 135
+    content: b
+  - delay: 822
+    content: '-'
+  - delay: 253
+    content: C
+  - delay: 102
+    content: o
+  - delay: 202
+    content: m
+  - delay: 126
+    content: m
+  - delay: 141
+    content: a
+  - delay: 127
+    content: 'n'
+  - delay: 117
+    content: d
+  - delay: 712
+    content: '"'
+  - delay: 160
+    content: "\r\nUse Sub-Command\r\n\e]0;nitishkumar@15-ec0104ax: ~/Practice/blog/go-cli\a\e[01;32mnitishkumar@15-ec0104ax\e[00m:\e[01;34m~/Practice/blog/go-cli\e[00m$ "
+  - delay: 1283
+    content: .
+  - delay: 164
+    content: /
+  - delay: 577
+    content: b
+  - delay: 114
+    content: i
+  - delay: 175
+    content: 'n'
+  - delay: 203
+    content: /
+  - delay: 602
+    content: g
+  - delay: 182
+    content: o
+  - delay: 209
+    content: '-cli '
+  - delay: 1563
+    content: f
+  - delay: 133
+    content: i
+  - delay: 127
+    content: r
+  - delay: 103
+    content: l
+  - delay: 730
+    content: "\b\e[K"
+  - delay: 169
+    content: "\b\e[K"
+  - delay: 866
+    content: e
+  - delay: 913
+    content: "\b\e[K"
+  - delay: 795
+    content: "\b\e[K"
+  - delay: 622
+    content: "\b\e[K"
+  - delay: 2514
+    content: d
+  - delay: 124
+    content: i
+  - delay: 113
+    content: r
+  - delay: 138
+    content: ' '
+  - delay: 956
+    content: .
+  - delay: 643
+    content: "\r\n"
+  - delay: 5
+    content: "Directory Name: .\r\nSize of Directory: 4 Mb\r\nTotal 10 files and 3 directories found\r\n\e]0;nitishkumar@15-ec0104ax: ~/Practice/blog/go-cli\a\e[01;32mnitishkumar@15-ec0104ax\e[00m:\e[01;34m~/Practice/blog/go-cli\e[00m$ "
+  - delay: 10757
+    content: l
+  - delay: 149
+    content: s
+  - delay: 99
+    content: "\r\n\e[0m\e[01;34mbin\e[0m  \e[01;34mcmd\e[0m  go.mod  go.sum  main.go  \e[01;34mpkg\e[0m  README.MD\r\n\e]0;nitishkumar@15-ec0104ax: ~/Practice/blog/go-cli\a\e[01;32mnitishkumar@15-ec0104ax\e[00m:\e[01;34m~/Practice/blog/go-cli\e[00m$ "
+  - delay: 5276
+    content: .
+  - delay: 164
+    content: /
+  - delay: 684
+    content: b
+  - delay: 131
+    content: i
+  - delay: 145
+    content: 'n'
+  - delay: 817
+    content: /
+  - delay: 365
+    content: g
+  - delay: 124
+    content: o
+  - delay: 278
+    content: '-'
+  - delay: 247
+    content: c
+  - delay: 568
+    content: l
+  - delay: 806
+    content: i
+  - delay: 940
+    content: ' '
+  - delay: 254
+    content: f
+  - delay: 120
+    content: i
+  - delay: 185
+    content: l
+  - delay: 188
+    content: "\a"
+  - delay: 591
+    content: e
+  - delay: 636
+    content: ' '
+  - delay: 2095
+    content: h
+  - delay: 142
+    content: e
+  - delay: 95
+    content: l
+  - delay: 167
+    content: p
+  - delay: 227
+    content: "\r\nIssue faced while accessing file open help: no such file or directory\r\n\e]0;nitishkumar@15-ec0104ax: ~/Practice/blog/go-cli\a\e[01;32mnitishkumar@15-ec0104ax\e[00m:\e[01;34m~/Practice/blog/go-cli\e[00m$ "
+  - delay: 1353
+    content: ./bin/go-cli file help
+  - delay: 376
+    content: "\b\e[K"
+  - delay: 149
+    content: "\b\e[K"
+  - delay: 136
+    content: "\b\e[K"
+  - delay: 117
+    content: "\b\e[K"
+  - delay: 144
+    content: "\b\e[K"
+  - delay: 614
+    content: ' '
+  - delay: 194
+    content: '-'
+  - delay: 132
+    content: '-'
+  - delay: 781
+    content: h
+  - delay: 163
+    content: e
+  - delay: 480
+    content: l
+  - delay: 247
+    content: p
+  - delay: 222
+    content: "\r\n"
+  - delay: 5
+    content: "This will allow users to perform operations on files\r\n\r\nUsage:\r\n  go-cli file [flags]\r\n\r\nFlags:\r\n  -h, --help   help for file\r\n  -s, --size   Size of the File\r\n\e]0;nitishkumar@15-ec0104ax: ~/Practice/blog/go-cli\a\e[01;32mnitishkumar@15-ec0104ax\e[00m:\e[01;34m~/Practice/blog/go-cli\e[00m$ "
+  - delay: 7636
+    content: ./bin/go-cli file --help
+  - delay: 578
+    content: "\b\e[K"
+  - delay: 146
+    content: "\b\e[K"
+  - delay: 125
+    content: "\b\e[K"
+  - delay: 119
+    content: "\b\e[K"
+  - delay: 143
+    content: "\b\e[K"
+  - delay: 134
+    content: "\b\e[K"
+  - delay: 1891
+    content: g
+  - delay: 116
+    content: o
+  - delay: 326
+    content: .
+  - delay: 331
+    content: "\a"
+  - delay: 524
+    content: m
+  - delay: 244
+    content: 'od '
+  - delay: 682
+    content: "\r\nFile Name go.mod\r\nSize of the File 140 bytes\r\n"
+  - delay: 6
+    content: "File Modified Time: 2020-09-27 13:11:58.715446579 +0530 IST\r\n\e]0;nitishkumar@15-ec0104ax: ~/Practice/blog/go-cli\a\e[01;32mnitishkumar@15-ec0104ax\e[00m:\e[01;34m~/Practice/blog/go-cli\e[00m$ "
+  - delay: 4626
+    content: "logout\r\n"
