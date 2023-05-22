@@ -48,6 +48,7 @@ WSGIScriptAlias / /var/www/my_django_app/django.wsgi\n\
 RUN pip install -r requirements.txt; chown apache:apache /etc/apache2/; \
 chown -R apache:apache /var/www/
 COPY httpd-foreground /usr/local/bin/
+RUN chmod +x /usr/local/bin/httpd-foreground
 EXPOSE 8080
 # ENTRYPOINT ["httpd", "-D", "FOREGROUND", "-e", "info", "&"]
 CMD ["httpd-foreground"]
